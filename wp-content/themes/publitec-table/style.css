@@ -1,0 +1,459 @@
+/*
+Theme Name: Publitec Table
+Theme URI: http://www.pubiltec.de/
+Description: Publitec GmbH
+Author: Publitec GmbH | Sandra Lewandowski, Sayd Imaker
+Author URI: http://www.publitec.de/
+Version: 1.0
+*/
+
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;padding:0;border:0;margin:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.clear{clear:both}
+.sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}
+
+html, body { width:100%; height:100%; margin:0; font-family:'Futura W01 Book'; font-size:20px; }
+
+/*body { background-image:url(/wp-content/themes/publitec-table/images/bg-city.png), url(/wp-content/themes/publitec-table/images/bg-decor.png); background-position: center bottom, center top; background-repeat: repeat-x, repeat repeat; background-attachment:fixed; }*/
+body {  background-image:url(/wp-content/themes/publitec-table/images/bg-decor.png); background-position: center top; background-repeat: repeat repeat; background-attachment:fixed; }
+#container { display:table; width:1120px; margin:0 auto; height:100%; background:#fff; 
+ -webkit-box-shadow: -20px 0 40px 0 rgba(254,237,1,.2), 20px 0 40px 0 rgba(254,237,1,.2); 
+	-moz-box-shadow: -20px 0 40px 0 rgba(254,237,1,.2), 20px 0 40px 0 rgba(254,237,1,.2);
+		 box-shadow: -20px 0 40px 0 rgba(254,237,1,.2), 20px 0 40px 0 rgba(254,237,1,.2);
+}
+
+.box { padding:0 60px; }
+
+/* -------------------- ### Stil Elemente ### -------------------- */
+.w5 {width:5%;} .w10 {width:10%;} .w15 {width:15%;} .w20 {width:20%;} .w25 {width:25%;} .w30 {width:30%;} .w40 {width:40%;} .w50 {width:50%;} 
+.w60 {width:60%;} .w65 {width:65%;} .w70 {width:70%;} .w80 {width:80%;} .w90 {width:90%;} .w100 {width:100%;}
+.rel {position: relative;} .abs {position: absolute;}
+.left {float:left;} .right {float:right;} .center{margin:0 auto;} 
+.textleft { text-align:left; } .textright { text-align:right; } .textcenter { text-align:center; }
+.table { display:table} .row { display:table-row; } .cell { display:table-cell; vertical-align:top; } 
+.pad40t { padding: 40px 0 0 0; }  .pad40b { padding: 0 0 40px 0; } 
+.rot { color:#e40613; }
+
+
+H1 { font-family:'FuturaW01-MediumCondens'; font-size:46px; margin:0 0 40px 0; }
+H2 { }
+H3, .h3 { font-family:'FuturaW01-MediumCondens'; font-size:46px; line-height:36px; margin:0 0 20px 0; }
+H4 { }
+H5 { font-family:'FuturaW01-MediumCondens'; font-size:24px; margin:0 0 20px 0; }
+H6 { }
+strong { font-weight:bold; } em { font-style:italic; }
+
+a { text-decoration:none; color:#000; } a:hover, .tb-close-icon:hover:before { color:#e40613; }
+article a { color:#e40613; } article a:hover { color:#000; } 
+p { line-height:24px; }
+p+p { margin:20px 0 0 0; }
+
+
+a, .wpcf7-submit, #event-selector, .tribe-events-button, #tribe-events .tribe-events-button { -webkit-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease; } 
+
+
+/* -------------------- ### TABLE-LAYOUT ### -------------------- */
+	/*  HEADER  */
+	#header { display:table-row; }
+	/* CONTENT  */
+	#content { width:100%; height:100%; display:table-row; }
+	#container > #content > div { display:table-cell; }
+	/*  FOOTER  */
+	#footer { display:table-row; }
+
+
+/* -------------------- ### NAV ### -------------------- */
+#menu { width:60%;  float:right; padding:40px 0; position:relative; text-align:right; }
+#menu a {  }
+
+
+/* -------------------- ### MAINMENU ### -------------------- */
+#menu-mainmenu { margin:164px 0 0 0; }
+#menu-mainmenu li { display:inline-block; font-family:'FuturaW01-MediumCondens'; font-size:23px; } #menu-mainmenu li+li { padding:0 0 0 35px; }
+#menu-mainmenu a:hover, ul#menu-mainmenu .current-menu-item a, #menu-mainmenu .current_page_item a,#menu-mainmenu .current-post-ancestor a, #menu-mainmenu .current-menu-parent a, #menu-mainmenu .current-custom-parent a { color:#e40613; }
+#menu-mainmenu .sub-menu { display:none; }
+
+/* -------------------- ### RESPONSIVE/MOBILE ### -------------------- */
+#resp-menu {display:none; font-family:'FuturaW01-MediumCondens'; text-transform:uppercase; color:#322783; position:absolute; right:0; top:143px; cursor:pointer; } #resp-menu:hover { color:#FEED01; }
+#resp-menu .title {display:inline-block; font-size:22px;}
+#resp-menu .icon {display:inline-block; width:20px; height:18px; margin-left:5px;}
+#resp-menu .stripe {display:block; width:18px; height:4px; background:#322783; margin-bottom:3px;} #resp-menu:hover .stripe{ background:#FEED01; }
+
+
+/* -------------------- ### FOOTERMENU ### -------------------- */
+#menu-footermenu { color:#b0b0b0; }
+#menu-footermenu li { display:inline-block; } #menu-footermenu li+li:before { content:' | '; }
+#menu-footermenu li a { color:#b0b0b0; }
+
+
+/* -------------------- ### BREADCRUMBS ### -------------------- */
+#breadcrumbs { list-style:none; margin:0 0 40px 0; overflow:hidden; }
+#breadcrumbs li { float:left; margin-right:15px; font-size:14px; line-height:20px; }
+#breadcrumbs .separator{ font-weight:700; font-size:16px; color:#999; }
+
+/* -------------------- ### HEADER ### -------------------- */
+#header { height:270px; }
+#branding { width:40%; float:left; padding:40px 0 0 0; } #branding img { width:auto; height:100%; max-height:184px; }
+#event-selector { width:190px; height:50px; background:#322783; }
+#event-selector:hover { background:#FEED01; }
+#event-selector a { color:#fff; } #event-selector a:hover { color:#000; }
+#event-selector p { font-family:'FuturaW01-MediumCondens'; font-size:23px; padding:13px 20px; }
+#event-selector i { padding:0 0 0 13px; }
+
+
+/* -------------------- ### FOOTER ### -------------------- */
+footer { background-image:url(/wp-content/themes/publitec-table/images/logo-zaidan.png), url(/wp-content/themes/publitec-table/images/bg-footer.png); background-position:center top, center 48px; background-repeat:no-repeat no-repeat, repeat-x; }
+/*footer a { color:#000; }*/ footer > div { padding:115px 0 35px 0; }
+#copyright { text-align:center; }
+#footermenu { text-align:center; }
+.contact_info li { display:inline-block; margin:0 0 20px 0; }
+.contact_info .campany_name { font-size:30px; font-family:'FuturaW01-MediumCondens'; }
+.contact_info li+li:before { content:' | '; }
+
+
+/* -------------------- ### Homeage ### -------------------- */
+.home #geschaefte { margin-bottom:-50px; }
+.home #geschaefte li { width:30%; display:inline-block; margin:0 4% 50px 0; border:solid 1px #c9c9c9; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; box-sizing:border-box; }
+.home #geschaefte li:nth-child(3n) { margin:0; }
+.home .geschaeft { height:315px; overflow:hidden; position:relative; text-align:center; }
+.home .geschaeft-logo { width:auto; height:105px; padding:30px 0; }
+.geschaeft-bild img { width:100%; height:auto; }
+.home .geschaeft-bild { height:165px; overflow:hidden; }
+.home .geschaeft-description { width:100%;  background: rgba(254,237,1,.925); display:table; position:absolute; top:315px; text-align:center; 
+-webkit-transition:all .75s ease;-moz-transition:all .75s ease;transition:all .75s ease; }
+.home .geschaeft-description > div { height:315px; display:table-cell; vertical-align:middle; padding:0 20px; }
+.home .geschaeft-description .title { font-size:26px; font-weight:bold; margin:0 0 20px 0; }
+.home .geschaeft-description H5:last-child { margin:0; }
+.home #slider { margin: 0 0 -3px 0; }
+
+
+
+/* -------------------- ### Page ### -------------------- */
+#content > div > section { border-top:solid 15px #feed01; padding:65px 0; }
+.entry-title:first-letter { color:#e40613; }
+#gmap_canvas { width:100%; height:375px; overflow:hidden; } #googlemap iframe { width:100%; height:375px; }
+#slider .container { max-height:375px; overflow:hidden; margin-bottom:-3px; }
+#slider img { width:100%; height:auto; }
+.page-template-single-category-geschaefte-php #slider img { margin-top:-150px; }
+
+
+/* -------------------- ### Geschaefte ### -------------------- */
+.category #geschaefte {  }
+.category #geschaefte li { border:solid 1px #c9c9c9; } .category #geschaefte li+li { margin:40px 0 0 0; }
+.category #geschaefte li img { width:100%; height:auto; margin-bottom:-3px; } @-moz-document url-prefix() { .category #geschaefte li img { margin-bottom:-5px; } }
+.category #geschaefte li .cell:first-child img { width:auto; height:100px; margin-bottom:0; }
+.category #geschaefte li .cell:first-child { text-align:center; vertical-align:middle; }
+.category #geschaefte li .geschaeft-description { padding:20px; }
+.category #geschaefte li .geschaeft-description p { margin:0; }
+.single #geschaefte article > .cell:nth-child(1) { padding:0 5% 0 0; }
+.single #geschaefte article > .cell:nth-child(2) { width:270px;  }
+.single #geschaefte .logo { margin:0 0 40px 0; border:solid 1px #c9c9c9; text-align:center; }
+.single #geschaefte .logo img { width:auto; max-height:110px; margin-bottom:-2px; }
+.single #geschaefte .geschaeft-description { margin:0 0 40px 0; text-align:center; }
+.single #geschaefte .geschaeft-infoblock { margin:0 0 40px 0; }
+.single #geschaefte .geschaeft-infoblock .row p { margin:0 0 10px 0; }
+.single #geschaefte .geschaeft-socialmedia { font-size:30px; /*margin:0 0 40px 0;*/ }
+.single #geschaefte .geschaeft-socialmedia li { display:inline-block; } .single #geschaefte .geschaeft-socialmedia li+li { padding:0 0 0 20px; }
+.single #geschaefte .geschaeft-socialmedia a { /*color:#235306;*/ color:#140996; } .single #geschaefte .geschaeft-socialmedia a:hover { color:#FEED01; }
+.single #geschaefte .geschaeft-infoblock .cell.w10 { padding:3px 0 0 0; }
+.single #geschaefte .gallery > br { clear:none !important; }
+.single #geschaefte .gallery-item { width:25% !important; } .single #geschaefte .gallery-item img { width:90% !important; height:auto; }
+
+
+/* -------------------- ### Aktuelles ### -------------------- */
+.aktuelles H1 { margin: 0 0 20px 0; }
+.aktuelles article { border:solid 1px #c9c9c9; } .aktuelles article { margin:0 0 40px 0; }
+.aktuelles article .cell img { width:100%; height:auto; margin-bottom:-3px; }
+.aktuelles article .cell:last-child { vertical-align:middle; padding:20px; }
+
+
+
+
+/* -------------------- ### Veranstaltungen ### -------------------- */
+#tribe-events-pg-template { border-top:solid 15px #feed01; padding:65px 60px !important; }
+.tribe-events-calendar thead th { background-color:#235306 !important; }
+.tribe-events-calendar td.mobile-active, .tribe-events-calendar .mobile-active div[id*="tribe-events-daynum-"], .tribe-events-calendar .mobile-active div[id*="tribe-events-daynum-"] a, #tribe-events-content .tribe-events-calendar .mobile-active:hover  { background-color:#FEED01 !important; color:#000 !important; }
+.tribe-events-calendar .mobile-active.tribe-events-has-events:after { background-color:#000 !important; }
+/*.tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"],*/ .tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"] > a, #tribe_events_filters_wrapper input[type="submit"], .tribe-events-button, #tribe-events .tribe-events-button, .tribe-events-button.tribe-inactive, #tribe-events .tribe-events-button:hover, .tribe-events-button:hover, .tribe-events-button.tribe-active:hover { background-color:#FEED01 !important; color:#000 !important; }
+/*.tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"] { background:#4B6E06 !important; }*/
+.tribe-events-button, #tribe-events .tribe-events-button { background:#140996 !important; color:#fff !important; } 
+.tribe-events-button:hover, #tribe-events .tribe-events-button:hover { background:#FEED01 !important; color:#000 !important; }
+.tribe-events-notices { background:#fff89c !important; border:solid 1px #FEED01 !important; color: #3a87ad; }
+#tribe-events-content .tribe-events-tooltip h4, #tribe_events_filters_wrapper .tribe_events_slider_val, .single-tribe_events a.tribe-events-ical, .single-tribe_events a.tribe-events-gcal { color:#000 !important; }
+.tribe-events-notices { color: #000 !important; }
+#tribe-events-pg-template { max-width: none !important; }
+
+
+/* -------------------- ### Kontakt ### -------------------- */
+.page-id-11 .table > div > div > .table { margin:0 0 40px 0;}
+.wpcf7 textarea { margin:5px 0 0 0; }
+.wpcf7 input:not(.wpcf7-submit) { width:100%; } .wpcf7 textarea { width:99.8%; }
+.wpcf7-submit { width:auto; margin:20px 0 0 0; padding:5px 50px; border:none; background:#322783; color:#fff; cursor:pointer; text-transform:uppercase; font-weight:bold; } .wpcf7-submit:hover { background:#FEED01; color:#000; }
+
+
+
+/* -------------------- ### Slider ### -------------------- */
+.flex-container a:active, .flexslider a:active, .flex-container a:focus, .flexslider a:focus { outline:none; }
+.slides, .flex-control-nav, .flex-direction-nav { margin:0;padding:0;list-style:none; }
+.flexslider .slides > li { display:none; -webkit-backface-visibility:hidden; }
+.flexslider .slides img { width:100%; height:auto;display:block; }
+.flex-pauseplay span { text-transform:capitalize; }
+.slides:after  {content: ".";display:block;clear:both;visibility:hidden;line-height:0;height:0; }
+html[xmlns] .slides { display:block;}
+* html .slides {height:1%;}
+.no-js .slides > li:first-child {display:block;}
+.flexslider {margin:0; -zoom:1;}
+.flex-viewport {max-height:2000px;-webkit-transition:all 1s ease;-moz-transition:all 1s ease;transition:all 1s ease;}
+.loading .flex-viewport {max-height:300px;}
+.flexslider .slides {zoom:1;}
+.flex-control-nav {line-height:15px;left:50%;margin-left:-150px;position:absolute;bottom:10px;text-align:center;height:15px;width:300px; z-index:2; }
+.flex-control-nav li {line-height:30px;margin:0 5px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-paging li a {width:8px;height:8px;display:block;background:#FFF;cursor:pointer;text-indent:-9999px;-webkit-border-radius:8px;-moz-border-radius:8px;-o-border-radius:8px;border-radius:8px; box-shadow: inset 0 0 3px rgba(0,0,0,0.3);}
+.flex-control-paging li a:hover {background:#322783;}
+.flex-control-paging li a.flex-active { background:#322783;cursor:default;}
+
+.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+.flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+.flex-control-thumbs img:hover {opacity: 1;}
+.flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
+
+.flex-caption { position: absolute; left:0; bottom: 40px; margin:0 60px; padding:1px; width: 400px; background: rgba(50,39,131,.98); font-weight: normal; color: #fff; }
+.flexslider p + p { margin:0; }
+
+
+/* -------------------- ### THICKBOX ### -------------------- */
+.tb-close-icon:before { content: '✖' !important; }
+.screen-reader-text { display:none; }
+
+
+@media screen and (max-width: 1180px) {
+	#container { max-width:1000px; }
+	
+	
+	/* -------------------- ### MAINMENU ### -------------------- */
+	#menu-mainmenu li+li { padding:0 0 0 15px; }
+	
+	
+	/* -------------------- ### Homeage ### -------------------- */
+	.home #geschaefte { margin-bottom:-45px; } .home #geschaefte li {  margin:0 4% 45px 0; }
+	.home .geschaeft { height:280px; } .home .geschaeft-description { top:280px; } .home .geschaeft-description > p { height:280px; }
+
+
+	/* -------------------- ### Page ### -------------------- */
+	#gmap_canvas { height:335px; } #googlemap iframe { height:335px; }
+	
+	
+	/* -------------------- ### Geschaefte ### -------------------- */
+	.category #geschaefte li .w25:first-child { width:20%; } .category #geschaefte li .w25 { width:30%; } .category #geschaefte li .w50  { width:50%; } 
+	.category #geschaefte li .cell:first-child img { width:90%; height:auto; }
+
+	.gallery > br { clear:none !important; }
+	.gallery-item, .single #geschaefte .gallery-item { width:33% !important; } .gallery-item img { width:90% !important; height:auto; }
+
+}
+
+@media screen and (max-width: 1024px) {
+	#container { max-width:900px; }
+	
+	
+	/* -------------------- ### HEADER ### -------------------- */
+	#header { height:230px; }
+	#branding img { height:144px; }
+	#event-selector { width:183px; height:48px; } #event-selector p { font-size:22px; }
+
+	/* -------------------- ### MAINMENU ### -------------------- */
+	#menu-mainmenu { margin: 124px 0 0 0; }
+	#menu-mainmenu a { font-size:22px; }
+	#menu-mainmenu li+li { padding:0 0 0 10px; }
+	
+	/* -------------------- ### Homeage ### -------------------- */
+	.home #geschaefte { margin-bottom:-40px; } .home #geschaefte li {  margin:0 4% 40px 0; }
+	
+	/* -------------------- ### Page ### -------------------- */
+	#gmap_canvas { height:301px; } #googlemap iframe { height:301px; }
+	.page-template-single-category-geschaefte-php #slider img { margin-top:-100px; }
+	
+	/* -------------------- ### Kontakt ### -------------------- */
+	.page-id-11 article > section > .table > .row > .w40, .page-id-11 article > section > .table > .row > .w60 { width:50% !important; }
+	
+	/* -------------------- ### Aktuelles ### -------------------- */
+	.aktuelles > article > .cell { width:auto; display:block; }
+	
+}
+
+@media screen and (max-width: 980px) {
+	
+	H3, .h3 { font-size:36px; margin:0 0 10px 0; }
+
+	#container { max-width:780px; }
+	.box { padding:0 30px; }
+	
+	/* -------------------- ### HEADER ### -------------------- */
+	#header { height:230px; }
+	#branding { width: 35%; } #menu { width: 65%; }
+	#branding img { height:124px; }
+	#event-selector { width:178px; } #event-selector p { font-size:21px; }
+
+
+	/* -------------------- ### MAINMENU ### -------------------- */
+	#menu-mainmenu { margin: 104px 0 0 0; }
+	#menu-mainmenu a { font-size:21px; }
+	
+
+	/* -------------------- ### Page ### -------------------- */
+	#gmap_canvas { height:261px; } #googlemap iframe { height:261px; }
+	.page-template-single-category-geschaefte-php #slider img { margin-top:-50px; }
+	
+	/* -------------------- ### Kontakt ### -------------------- */
+	.page-id-11 article > section > .table > .row > .w40, .page-id-11 article > section > .table > .row > .w60 { width:100% !important; display:block; }
+	
+	
+	/* -------------------- ### Slider ### -------------------- */
+	.flex-caption { margin:0 30px; }
+
+
+	/* -------------------- ### Veranstaltungen ### -------------------- */
+	#tribe-events-pg-template { padding:65px 30px !important; }
+	
+	
+	/* -------------------- ### Geschaefte ### -------------------- */
+	.category #geschaefte li .w25:first-child { width:50%; } .category #geschaefte li .w25 { width:50%; } .category #geschaefte li .w50 { width:auto; display:block; } 
+	/*.category #geschaefte li .cell:first-child img { width:90%; height:auto; }*/
+	
+	
+}
+
+@media screen and (max-width: 800px) {
+	#container { max-width:768px; }
+	
+	/* -------------------- ### Homeage ### -------------------- */
+	.home #geschaefte { margin-bottom:-45px; }
+	.home #geschaefte li { width:47%; display:inline-block; margin:0 5% 45px 0; }
+	.home #geschaefte li:nth-child(3n) { margin:0 5% 45px 0; } .home #geschaefte li:nth-child(2n) { margin:0; }
+	.home .geschaeft { height:330px; } .home .geschaeft-description { top:330px; } .home .geschaeft-description > p { height:330px; }
+	
+	
+	/* -------------------- ### FOOTERMENU ### -------------------- */
+	.contact_info li { display:inline-block; } .contact_info li.campany_name { display:block; margin:0 0 20px 0; }
+	.contact_info li+li:before { content:' | '; } .contact_info li:nth-child(2):before { content:' '; }
+	
+
+	/* -------------------- ### Page ### -------------------- */
+	#gmap_canvas { height:257px; } #googlemap iframe { height:257px; }
+	.page-template-single-category-geschaefte-php #slider img { margin-top:0px; }
+	#slider .container { height:auto; margin-bottom:-3px; }
+
+}
+
+@media screen and (max-width: 768px) {
+	#container { width:100%; }
+	
+	
+	/* -------------------- ### Veranstaltungen ### -------------------- */
+	h2.tribe-events-page-title, #tribe-geo-results h2.tribe-events-page-title { font-size:24px !important; }
+	
+	
+	/* -------------------- ### Geschaefte ### -------------------- */
+	/*.single #geschaefte .gallery-item { width:50%; } .single #geschaefte .gallery-item img { width:90%; height:auto; }*/
+	
+	.gallery-item, .single #geschaefte .gallery-item { width:50% !important; } .gallery-item img { width:90% !important; height:auto; }
+}
+
+@media screen and (max-width: 740px) {
+	
+	/* -------------------- ### MAINMENU ### -------------------- */
+	ul#menu-mainmenu { display:none; }
+	
+	/* -------------------- ### RESPONSIVE MENU BUTTON ### -------------------- */
+	#resp-menu { display:block; }
+	
+	/* -------------------- ### Homeage ### -------------------- */
+	.home #geschaefte { margin-bottom:-45px; }
+	.home #geschaefte li { width:45%; display:inline-block; margin:0 6% 45px 0; }
+	.home #geschaefte li:nth-child(2n) { margin:0; }
+	.home .geschaeft { height:300px; } .home .geschaeft-description { top:300px; } .home .geschaeft-description > p { height:300px; }
+	
+
+	/* -------------------- ### Page ### -------------------- */
+	#gmap_canvas { height:248px; } #googlemap iframe { height:248px; }
+}
+
+@media screen and (max-width: 640px) {
+	
+	/* -------------------- ### Homeage ### -------------------- */
+	.home .geschaeft { height:290px; } .home .geschaeft-description { top:290px; } .home .geschaeft-description > p { height:290px; }
+	
+	/* -------------------- ### Page ### -------------------- */
+	#gmap_canvas { height:215px; } #googlemap iframe { height:215px; }
+	
+}
+
+@media screen and (max-width: 540px) {
+	
+	/* -------------------- ### Homeage ### -------------------- */
+	.home #geschaefte { margin-bottom:-40px; }
+	.home #geschaefte li { width:100%; display:inline-block; margin:0 0 40px 0; }
+	.home #geschaefte li:nth-child(2n), .home #geschaefte li:nth-child(3n) { margin:0 0 40px 0; }
+	.home .geschaeft { height:330px; } .home .geschaeft-description { top:330px; } .home .geschaeft-description > p { height:330px; }
+		
+	/* -------------------- ### Slider ### -------------------- */
+	#slider { background:#322783; }
+	.flex-caption { position:relative; bottom:0; margin:0; padding:20px 30px; }
+	.flex-control-nav { top:10px; }
+	
+	/* -------------------- ### Page ### -------------------- */
+	#gmap_canvas { height:200px; } #googlemap iframe { height:200px; }
+	
+	/* -------------------- ### Kontakt ### -------------------- */
+	.wpcf7-form > .table > .row > .w40, .wpcf7-form > .table > .row > .w60 { width:100%; display:block; }
+	.wpcf7-form > .table > .row > .w40 > p { margin:10px 0 0 0; }
+	
+	/* -------------------- ### Geschaefte ### -------------------- */
+	.category #geschaefte li .w25 { width:100% !important; display:block; } 
+	.category #geschaefte li .w25:first-child img { width:50%; margin:20px auto; }
+	.single #geschaefte article > .cell:nth-child(1) { padding:0 0 40px 0 !important; display:table !important; }
+	.single #geschaefte article > .cell:nth-child(2) { width:100% !important; display:table !important; }
+}
+
+@media screen and (max-width: 479px) {
+	
+	/* -------------------- ### HEADER ### -------------------- */
+	#header { height:250px; }
+	#branding { width: 100%; } #menu { width: 100%; }
+	#event-selector { float:left; }
+	#branding img { width:100%; height:auto; max-height: none; }
+		
+	/* -------------------- ### RESPONSIVE MENU BUTTON ### -------------------- */
+	#resp-menu { top:52px; }
+		
+	/* -------------------- ### Veranstaltungen ### -------------------- */
+	h2.tribe-events-page-title, #tribe-geo-results h2.tribe-events-page-title { font-size:20px !important; }
+}
+
+@media screen and (max-width: 420px) {
+	#content > div > section { padding: 40px 0px; }
+	
+	/* -------------------- ### FOOTERMENU ### -------------------- */
+	.contact_info .campany_name { font-size:24px; } .contact_info li, #footermenu a { font-size:16px; }
+	
+	/* -------------------- ### Veranstaltungen ### -------------------- */
+	h2.tribe-events-page-title, #tribe-geo-results h2.tribe-events-page-title { font-size:18px !important; }
+	#tribe-events-footer ~ a.tribe-events-ical.tribe-events-button { font-size:10px !important; }
+	
+}
+
+@media screen and (max-width: 359px) {
+	
+	/* -------------------- ### Homeage ### -------------------- */
+	.home .geschaeft { height:315px; } .home .geschaeft-description { top:315px; } .home .geschaeft-description > p { height:315px; }
+		
+	/* -------------------- ### Veranstaltungen ### -------------------- */
+	h2.tribe-events-page-title, #tribe-geo-results h2.tribe-events-page-title { font-size:15px !important; }
+	#tribe-events-footer ~ a.tribe-events-ical.tribe-events-button { font-size:9px !important; }
+	#tribe-mobile-container { width:260px; }	
+}
+
+@media screen and (max-width: 320px) {
+	
+	
+}
